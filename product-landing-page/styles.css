@@ -31,7 +31,7 @@ h1 {
   display: inline-block;
   width: min-content;
   text-align: right;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .flex-container {
@@ -44,6 +44,10 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  background: var(--background-color);
+  z-index: 100;
 }
 
 #nav-bar {
@@ -89,7 +93,7 @@ li {
   letter-spacing: 3px;
   font-family: "Fredoka One";
   text-shadow: 2px 2px 3px #fbfbff44;
-  margin: 10px 20px;
+  margin: 20px 20px 10px 20px;
 }
 
 h2 {
@@ -113,6 +117,7 @@ form {
 #email::placeholder {
   color: var(--background-color-alt);
   opacity: 70%;
+  z-index: 0;
 }
 
 #submit {

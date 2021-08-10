@@ -76,8 +76,12 @@ li {
 
 #nav-bar li {
   padding: 3px 5px;
-  background-color: var(--background-color-alt);
-  margin: 0px 5px;
+  border-right: 1px solid #fcbf29;
+  padding: 0 8px;
+}
+
+#nav-bar li:last-child {
+  border-right: none;
 }
 
 .theme {

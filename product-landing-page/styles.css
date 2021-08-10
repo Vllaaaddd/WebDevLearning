@@ -52,7 +52,6 @@ h1 {
   align-items: center;
   font-size: 23px;
   line-height: 160%;
-  background-color: var(--background-color-alt);
 }
 
 a {
@@ -76,12 +75,9 @@ li {
 }
 
 #nav-bar li {
-  padding: 8px;
-  border-right: 1px solid black;
-}
-
-#nav-bar li:last-child {
-  border-right: none;
+  padding: 3px 5px;
+  background-color: var(--background-color-alt);
+  margin: 0px 5px;
 }
 
 .theme {

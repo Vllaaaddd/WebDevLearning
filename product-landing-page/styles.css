@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
+
+:root {
+  --background-color: #19323c;
+  --background-color-alt: #244656;
+  --text-color: #fbfbff;
+  --accent: -webkit-linear-gradient(240deg, #fe9923, #fea832, #fcbf29, #fedb41);
+  --divider-8: url(https://as-stylestage.netlify.app/divider-8.svg);
+  --divider-9: url(https://as-stylestage.netlify.app/divider-9.svg);
+  --divider-10: url(https://as-stylestage.netlify.app/divider-10.svg);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto";
+}
+
+#header-image {
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+
+h1 {
+  font-family: "Fredoka One";
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 3px #fbfbff44;
+  font-size: 40px;
+  display: inline-block;
+  width: min-content;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-bar {
+  display: flex;
+  max-height: 72px;
+  align-items: center;
+  font-size: 23px;
+  line-height: 160%;
+  background-color: var(--background-color-alt);
+}
+
+a {
+  color: var(--text-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link :hover {
+  text-shadow: 2px 2px 3px #fe9923;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  height: min-content;
+}
+
+li {
+  list-style-type: none;
+}
+
+#nav-bar li {
+  padding: 8px;
+  border-right: 1px solid black;
+}
+
+#nav-bar li:last-child {
+  border-right: none;
+}
+
+.theme {
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Fredoka One";
+  text-shadow: 2px 2px 3px #fbfbff44;
+  margin: 10px 20px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+form {
+  text-align: center;
+}
+
+#email {
+  margin-top: 16px;
+  color: var(--background-color-alt);
+  font-size: 21px;
+  padding: 4px 15px;
+  border-radius: 45px;
+  border: none;
+  box-shadow: 2px 2px 3px #fbfbff44;
+}
+
+#email::placeholder {
+  color: var(--background-color-alt);
+  opacity: 70%;
+}
+
+#submit {
+  margin-top: 20px;
+  border-radius: 45px;
+  background: var(--accent);
+  padding: 4px 15px;
+  border: none;
+  font-size: 19px;
+}
+
+i {
+  background: var(--accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  line-height: 170%;
+  font-size: 19px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  margin: 35px;
+}
+
+.grid-container > h2 {
+  text-align: left;
+  margin-left: 6px;
+}
+
+.grid-container > p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}

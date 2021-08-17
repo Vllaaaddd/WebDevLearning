@@ -74,7 +74,7 @@ a {
   text-shadow: 2px 2px 3px #fe9923;
 }
 
-ul {
+#nav-ul {
   display: flex;
   padding: 0;
   height: min-content;
@@ -175,4 +175,26 @@ p {
 
 .💪-shop-container {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container {
+  /* border: 2px solid yellow; */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+    0 30px 15px -23px #fea93269 inset;
+  margin: 40px 30px;
+  border-top: 15px solid #fea932;
+  border-radius: 5px;
+  padding-top: 20px;
+  background: #1e3b48;
+}
+
+.shop-ul {
+  padding: 14px 0;
+}
+
+.shop-ul li {
+  padding: 6px;
 }

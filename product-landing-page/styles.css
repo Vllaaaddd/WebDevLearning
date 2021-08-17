@@ -174,4 +174,5 @@ p {
 /* <============= Shop =============> */
 
 .💪-shop-container {
+  display: flex;
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Doppio+One&display=swap");
 
 :root {
   --background-color: #19323c;
@@ -52,8 +52,13 @@ h1 {
   justify-content: center;
   position: sticky;
   top: 0;
-  background: var(--background-color);
+  background-image: radial-gradient(ellipse at bottom, #1e3b48, #19323c);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   z-index: 100;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  padding-bottom: 15px;
 }
 
 #nav-bar {
@@ -99,7 +104,7 @@ li {
   letter-spacing: 3px;
   font-family: "Fredoka One";
   text-shadow: 2px 2px 3px #fbfbff44;
-  margin: 20px 20px 10px 20px;
+  margin: 45px 20px 10px 20px;
 }
 
 h2 {
@@ -108,6 +113,7 @@ h2 {
 
 form {
   text-align: center;
+  margin-bottom: 60px;
 }
 
 #email {
@@ -126,19 +132,28 @@ form {
   z-index: 0;
 }
 
-#submit {
+.button {
   margin-top: 20px;
   border-radius: 45px;
   background: var(--accent);
   padding: 4px 15px;
   border: none;
   font-size: 19px;
+  font-family: "Fredoka One";
+  letter-spacing: 1px;
+  color: var(--background-color);
 }
 
 i {
   background: var(--accent);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#features {
+  /* background: #244656; */
+  /* clip-path: polygon(0% 100%, 100% 100%, 100% 2.5%, 50% 0%, 0% 2.5%); */
+  padding-top: 0;
 }
 
 #video {
@@ -185,16 +200,54 @@ p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
     0 30px 15px -23px #fea93269 inset;
   margin: 40px 30px;
-  border-top: 15px solid #fea932;
-  border-radius: 5px;
-  padding-top: 20px;
+  padding-top: 0;
   background: #1e3b48;
+  font-size: 18px;
+  border-radius: 10px;
 }
+
+.card-container h3 {
+  background: var(--accent);
+  margin-top: -8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+  color: var(--background-color);
+  font-family: "Fredoka One";
+  font-size: 20px;
+  /* font-weight: 700; */
+  letter-spacing: 1px;
+}
+
+/* #1e3b48 */
 
 .shop-ul {
   padding: 14px 0;
+  margin: 0;
 }
 
 .shop-ul li {
-  padding: 6px;
+  padding: 5px;
+}
+
+.price-tag {
+  font-family: "Doppio One";
+  font-size: 24px;
+  color: #37fa69;
+}
+
+.card-container button {
+  margin: 10px 0 30px 0;
+}
+
+#footer {
+  text-align: right;
+  margin-top: 20px;
+  font-size: 12px;
+  background-image: radial-gradient(ellipse at bottom, #1e3b48, #19323c);
+  padding: 15px;
+}
+
+#footer li {
+  display: inline;
 }

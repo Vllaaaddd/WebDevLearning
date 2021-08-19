@@ -25,19 +25,25 @@ body {
 }
 
 #header-image {
-  transform: rotate(-45deg);
-  margin-top: 10px;
+  /* transform: rotate(-45deg); */
+  margin: 21px 0px 0px px;
+  padding-right: 30px;
+  align-self: flex-start;
+  left: 25px;
+  top: 15px;
+  position: relative;
 }
 
 h1 {
   font-family: "Fredoka One";
   letter-spacing: 3px;
   text-shadow: 2px 2px 3px #fbfbff44;
-  font-size: 40px;
+  font-size: 25px;
   display: inline-block;
   width: min-content;
   text-align: right;
-  margin-bottom: 10px;
+  margin: 30px 25px 10px 25px;
+  align-self: flex-end;
 }
 
 .flex-container {
@@ -59,15 +65,13 @@ h1 {
   z-index: 100;
   /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
-  padding-bottom: 15px;
 }
 
 #nav-bar {
   display: flex;
   max-height: 72px;
   align-items: center;
-  font-size: 23px;
-  line-height: 160%;
+  font-size: 17px;
 }
 
 a {
@@ -92,7 +96,6 @@ li {
 }
 
 #nav-bar li {
-  padding: 3px 5px;
   border-right: 1px solid #fcbf29;
   padding: 0 8px;
 }
